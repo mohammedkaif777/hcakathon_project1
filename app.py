@@ -504,8 +504,9 @@ def _render_poster_picker(name, offer_type, discount_value, min_bill, expiry, ma
 
 
 def _show_teaser(name, offer_type, discount_value, min_bill, expiry, max_discount, free_item, coupon_code, poster, image_path=None) -> None:
-    if image_path and Path(str(image_path)).is_file():
-        st.image(str(image_path), width=320)
+    path_text = _label(image_path, "")
+    if path_text and Path(path_text).is_file():
+        st.image(path_text, width=320)
     teaser = teaser_discount(offer_type, float(discount_value), free_item or None)
     if poster:
         st.markdown(teaser_card(name, teaser), unsafe_allow_html=True)
@@ -625,7 +626,7 @@ def _render_chat(customer_id: str) -> None:
             offer_type = camp["offer_type"]
             discount_value = camp["discount_value"]
             max_discount = camp.get("max_discount")
-            free_item = camp.get("free_item_name") or ""
+            free_item = _label(camp.get("free_item_name"), "")
             poster = _poster_flag(camp["include_poster"])
         st.caption(event["status"])
         _show_teaser(

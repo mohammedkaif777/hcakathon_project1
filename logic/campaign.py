@@ -242,7 +242,7 @@ def send_campaign(
                 "offer_text": offer_text,
                 "min_bill_amount": campaign["min_bill_amount"],
                 "expiry_datetime": campaign["expiry_datetime"],
-                "poster_file": campaign.get("poster_file") or "",
+                "poster_file": "" if _missing(campaign.get("poster_file")) else str(campaign.get("poster_file")),
             }
         )
         next_message += 1
@@ -264,6 +264,15 @@ def _next_id(df: pd.DataFrame, column: str, prefix: str) -> int:
         if tail.isdigit():
             numbers.append(int(tail))
     return (max(numbers) + 1) if numbers else 1
+
+
+def _missing(value) -> bool:
+    if value is None or value == "":
+        return True
+    try:
+        return bool(pd.isna(value))
+    except TypeError:
+        return False
 
 
 def _optional_float(value) -> float | None:
