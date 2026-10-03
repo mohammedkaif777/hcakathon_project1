@@ -1,0 +1,4 @@
+merchant_id,store_name,owner_name,city,default_margin_pct,created_at,is_active
+M001,Sharma Snacks & More,Raj Sharma,Mumbai,25.0,2025-01-01 10:00:00,True
+M002,Cafe North,Priya Nair,Delhi,30.0,2025-03-12 11:00:00,True
+M003,Closed Kiosk,Amit Das,Pune,20.0,2024-08-01 11:00:00,False

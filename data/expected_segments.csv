@@ -1,0 +1,79 @@
+merchant_id,customer_id,expected_tags,reason
+M001,C001,One-time,frequency == 1
+M001,C002,One-time,frequency == 1
+M001,C003,One-time,frequency == 1
+M001,C004,One-time,frequency == 1
+M001,C005,One-time,frequency == 1
+M001,C006,One-time,frequency == 1
+M001,C007,One-time,frequency == 1
+M001,C008,One-time,frequency == 1
+M001,C009,One-time,frequency == 1
+M001,C010,One-time,frequency == 1
+M001,C011,One-time,frequency == 1
+M001,C012,One-time,frequency == 1
+M001,C013,One-time,frequency == 1
+M001,C014,One-time,frequency == 1
+M001,C015,One-time,frequency == 1
+M001,C016,Regular,no special segment rule matched
+M001,C017,Regular,no special segment rule matched
+M001,C018,Regular,no special segment rule matched
+M001,C019,Regular,no special segment rule matched
+M001,C020,Regular,no special segment rule matched
+M001,C021,Regular,no special segment rule matched
+M001,C022,Regular,no special segment rule matched
+M001,C023,Regular,no special segment rule matched
+M001,C024,Regular,no special segment rule matched
+M001,C025,Regular,no special segment rule matched
+M001,C026,Regular,no special segment rule matched
+M001,C027,Regular,no special segment rule matched
+M001,C028,Regular,no special segment rule matched
+M001,C029,Regular,no special segment rule matched
+M001,C030,Regular,no special segment rule matched
+M001,C031,Regular,no special segment rule matched
+M001,C032,Regular,no special segment rule matched
+M001,C033,Regular,no special segment rule matched
+M001,C034,Regular,no special segment rule matched
+M001,C035,Regular,no special segment rule matched
+M001,C036,Dormant,recency_days >= 45
+M001,C037,Dormant,recency_days >= 45
+M001,C038,Dormant,recency_days >= 45
+M001,C039,Dormant,recency_days >= 45
+M001,C040,Dormant,recency_days >= 45
+M001,C041,Dormant,recency_days >= 45
+M001,C042,Dormant,recency_days >= 45
+M001,C043,Dormant,recency_days >= 45
+M001,C044,Dormant,recency_days >= 45
+M001,C045,Dormant,recency_days >= 45
+M001,C046,"Dormant,Loyal",frequency >= 5 and recency_days >= 45
+M001,C047,"Dormant,Loyal",frequency >= 5 and recency_days >= 45
+M001,C048,Loyal,frequency >= 5
+M001,C049,Loyal,frequency >= 5
+M001,C050,Loyal,frequency >= 5
+M001,C051,Loyal,frequency >= 5
+M001,C052,Loyal,frequency >= 5
+M001,C053,"Dormant,High Value",recency_days >= 45 and spend in top 25%
+M001,C054,"Dormant,High Value",recency_days >= 45 and spend in top 25%
+M001,C055,"Dormant,High Value",recency_days >= 45 and spend in top 25%
+M001,C056,"Dormant,High Value",recency_days >= 45 and spend in top 25%
+M001,C057,"Dormant,High Value",recency_days >= 45 and spend in top 25%
+M001,C058,"Dormant,High Value",recency_days >= 45 and spend in top 25%
+M001,C059,"Dormant,High Value",recency_days >= 45 and spend in top 25%
+M001,C060,"Dormant,High Value",recency_days >= 45 and spend in top 25%
+M001,C061,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C062,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C063,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C064,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C065,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C066,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C067,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C068,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C069,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M001,C070,"High Value,Loyal",frequency >= 5 and spend in top 25%
+M002,C201,One-time,frequency == 1
+M002,C202,One-time,frequency == 1
+M002,C203,One-time,frequency == 1
+M002,C204,Regular,no special segment rule matched
+M002,C205,Regular,no special segment rule matched
+M002,C206,Regular,no special segment rule matched
+M002,C207,High Value,spend in top 25%
+M002,C208,High Value,spend in top 25%
